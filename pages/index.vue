@@ -96,7 +96,7 @@ import App from '~/layouts/app.vue';
                 </span>
             </div>
             <div data-tid="footer" class="col-start-1 md:col-start-2 col-end-4 row-start-4 flex flex-wrap items-center">
-                <span data-tid="source" class="flex mr-1 items-center flex-1 overflow-hidden fade">
+                <span data-tid="source" class="flex mr-1 items-center flex-1 overflow-hidden">
                     <span class="aspect-square overflow-hidden rounded-full flex-none" >
                         <img src="https://images.hotukdeals.com/users/raw/default/1426964_13/fi/30x30/qt/80/1426964_13.jpg"
                             alt="Optimus2050's avatar" class="">
