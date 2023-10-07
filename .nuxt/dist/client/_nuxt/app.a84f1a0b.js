@@ -1,0 +1,1 @@
+import{_ as s,q as t,s as a,J as o,m as n}from"./entry.d2a98009.js";const r={},c={class:"min-h-screen bg-gray-200 text-gray-700 font-sans font-normal"},l={class:"max-w-[920px] w-full mx-auto p-4"};function _(e,d){return n(),t("div",c,[a("div",l,[o(e.$slots,"default")])])}const m=s(r,[["render",_]]);export{m as default};

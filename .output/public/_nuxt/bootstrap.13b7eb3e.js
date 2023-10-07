@@ -1,0 +1,1 @@
+import t from"./app.a84f1a0b.js";import{I as e,x as o,m as a,y as r}from"./entry.d2a98009.js";const n={__name:"bootstrap",setup(p){return(s,c)=>(a(),e(t,null,{default:o(()=>[r(" bootstrap ")]),_:1}))}};export{n as default};
