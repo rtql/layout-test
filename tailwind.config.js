@@ -8,8 +8,15 @@ export default {
     "./plugins/**/*.{js,ts}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      'nunito': ['lato', 'sans-serif'],
+    },
+    extend: {
+      colors: {
+        default: "#ff7900",
+        hover: "#ff9300",
+      },
+    },
   },
   plugins: [],
-}
-
+};

@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.button {
+    @apply flex items-center justify-center h-9 rounded-full border border-gray-400 text-gray-600;
+}
+.button:hover {
+    @apply flex items-center justify-center h-9 rounded-full border border-gray-400;
+}
+.fade {
+    @apply relative after:absolute after:content-[''] after:h-6 after:w-8 after:right-8 after:translate-x-full after:bottom-0 after:bg-gradient-to-r from-transparent to-white 
+}
