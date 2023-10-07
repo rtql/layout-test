@@ -3,8 +3,15 @@ import App from '~/layouts/app.vue';
 </script>
 <template>
     <App>
-        <div class="p-4 rounded-lg bg-white text-sm">
-            <div data-tid="top" class="flex justify-between items-center pb-4 ">
+        <div class="w-full p-4 grid row-auto col-auto rounded-lg bg-white text-sm">
+           
+            <div data-tid="image" class="w-[72px] md:w-[160px] lg:w-[192px] row-start-2 md:row-start-1 row-end-5 col-start-1 overflow-hidden mr-4">
+                <img alt="L'oreal Men Expert Instant Refresh Gift Set 300ml Shower Gel + 100ml Face Scrub - Student Discount £4.50 + Free C&amp;C"
+                    class="object-cover aspect-square"
+                    src="https://images.hotukdeals.com/threads/raw/tNPku/4211824_1/re/300x300/qt/60/4211824_1.jpg"
+                    loading="lazy" width="305" height="300">
+            </div>
+            <div data-tid="top" class="col-start-1 md:col-start-2 col-end-4 row-start-1 flex justify-between items-center pb-4 ">
                 <div data-tid="discount" class="button">
                     <button data-tid="minus" type="button" class="button border-none aspect-square  text-blue-700"
                         title="Down vote">
@@ -33,14 +40,7 @@ import App from '~/layouts/app.vue';
                     <span class="ml-1">Posted 43 m ago</span>
                 </div>
             </div>
-            <div data-tid="image" class="w-[72px] md:w-[160px] float-left overflow-hidden mr-4">
-                <img alt="L'oreal Men Expert Instant Refresh Gift Set 300ml Shower Gel + 100ml Face Scrub - Student Discount £4.50 + Free C&amp;C"
-                    class="object-cover aspect-square"
-                    src="https://images.hotukdeals.com/threads/raw/tNPku/4211824_1/re/300x300/qt/60/4211824_1.jpg"
-                    loading="lazy" width="305" height="300">
-            </div>
-
-            <div data-tid="title" class="flex flex-wrap text-base">
+            <div data-tid="title" class="col-start-2 col-end-4 row-start-2 text-base overflow-x-hidden">
                 <strong class="line-clamp-2 uppercase fade">
                     <a class=""
                         title="L'oreal Men Expert Instant Refresh Gift Set 300ml Shower Gel + 100ml Face Scrub - Student Discount £4.50 + Free C&amp;C"
@@ -86,14 +86,14 @@ import App from '~/layouts/app.vue';
                     </button>
                 </span>
             </div>
-            <div data-tid="description" class="flex w-full md:w-auto py-1">
+            <div data-tid="description" class="col-start-1 md:col-start-2 col-end-4 row-start-3 w-full md:w-auto py-1 line-clamp-5">
                 <span>
                     Description High performance shower gel to jump start your morning and give you an instant
                     wake-up
                     effect Enriched with 100mg of Taurine, an active ingredient that's like a shot of energy …
                 </span>
             </div>
-            <div data-tid="bottom" class="flex items-center flex-wrap">
+            <div data-tid="bottom" class="col-start-1 md:col-start-2 col-end-4 row-start-4 flex flex-wrap items-center">
                 <span data-tid="source" class="flex mr-1 items-center">
                     <span class="aspect-square overflow-hidden rounded-full">
                         <img src="https://images.hotukdeals.com/users/raw/default/1426964_13/fi/30x30/qt/80/1426964_13.jpg"
@@ -125,7 +125,7 @@ import App from '~/layouts/app.vue';
                     </button>
                 </span>
                 <button data-tid="getDeal"
-                    class="flex w-full items-center justify-center h-9 text-white bg-default rounded-full px-3 mt-2">
+                    class="flex w-full md:w-auto items-center justify-center h-9 text-white bg-default rounded-full px-3 mt-2 md:mt-0 md:ml-2">
                     <span class="">Get
                         deal*</span>
                     <svg width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
