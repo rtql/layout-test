@@ -3,27 +3,21 @@ import App from '~/layouts/app.vue';
 </script>
 <template>
     <App>
-        <div class="w-full p-4 grid row-auto col-auto rounded-lg bg-white text-sm">
-           
-            <div data-tid="image" class="w-[72px] md:w-[160px] lg:w-[192px] row-start-2 md:row-start-1 row-end-5 col-start-1 overflow-hidden mr-4">
-                <img alt="L'oreal Men Expert Instant Refresh Gift Set 300ml Shower Gel + 100ml Face Scrub - Student Discount £4.50 + Free C&amp;C"
-                    class="object-cover aspect-square"
-                    src="https://images.hotukdeals.com/threads/raw/tNPku/4211824_1/re/300x300/qt/60/4211824_1.jpg"
-                    loading="lazy" width="305" height="300">
-            </div>
-            <div data-tid="top" class="col-start-1 md:col-start-2 col-end-4 row-start-1 flex justify-between items-center pb-4 ">
-                <div data-tid="discount" class="button">
-                    <button data-tid="minus" type="button" class="button border-none aspect-square  text-blue-700"
+        <div class="w-full p-4 md:grid row-auto col-auto rounded-lg bg-white text-sm group cursor-pointer">
+            <div data-tid="header"
+                class="col-start-1 md:col-start-2 col-end-4 row-start-1 flex justify-between items-center pb-4 ">
+                <div data-tid="discount" class="button p-1 cursor-default">
+                    <button data-tid="minus" type="button" class="button-discount text-blue-700 hover:bg-blue-100"
                         title="Down vote">
                         <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M4 12L20 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" />
                         </svg>
                     </button>
-                    <span class="text-base text-red-700">
+                    <span class="text-base text-default">
                         27°
                     </span>
-                    <button data-tid="plus" type="button" class="button border-none aspect-square text-red-700"
+                    <button data-tid="plus" type="button" class="button-discount text-red-700 hover:bg-red-100"
                         title="Up vote">
                         <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M4 12H20M12 4V20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -31,7 +25,7 @@ import App from '~/layouts/app.vue';
                         </svg>
                     </button>
                 </div>
-                <div data-tid="posted" class="flex text-gray-400">
+                <div data-tid="postedAt" class="flex text-gray-400">
                     <svg width="22px" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M12 7V12L14.5 13.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
@@ -40,10 +34,17 @@ import App from '~/layouts/app.vue';
                     <span class="ml-1">Posted 43 m ago</span>
                 </div>
             </div>
-            <div data-tid="title" class="col-start-2 col-end-4 row-start-2 text-base overflow-x-hidden">
-                <strong class="line-clamp-2 uppercase fade">
-                    <a class=""
-                        title="L'oreal Men Expert Instant Refresh Gift Set 300ml Shower Gel + 100ml Face Scrub - Student Discount £4.50 + Free C&amp;C"
+            <div data-tid="picture"
+                class="float-left w-[72px] md:w-[160px] lg:w-[192px] row-start-2 md:row-start-1 row-end-5 col-start-1 mr-4 overflow-hidden rounded-lg relative ">
+                <img alt="L'oreal Men Expert Instant Refresh Gift Set 300ml Shower Gel + 100ml Face Scrub - Student Discount £4.50 + Free C&amp;C"
+                    class="object-contain aspect-square group-hover:scale-105 transition-transform "
+                    src="https://images.hotukdeals.com/threads/raw/tNPku/4211824_1/re/768x768/qt/60/4211824_1.jpg"
+                    loading="lazy" width="305" height="300">
+                <div class="absolute content-none bg-black bg-opacity-5 top-0 left-0 right-0 bottom-0"></div>
+            </div>
+            <div data-tid="title" class="col-start-2 col-end-4 row-start-2 text-base overflow-x-hidden ">
+                <strong class="line-clamp-2 fade hover:text-default transition-colors">
+                    <a  title="L'oreal Men Expert Instant Refresh Gift Set 300ml Shower Gel + 100ml Face Scrub - Student Discount £4.50 + Free C&amp;C"
                         href="https://www.hotukdeals.com/deals/loreal-men-expert-instant-refresh-gift-set-student-discount-ps450-free-cc-4212659">
                         L'oreal
                         Men Expert Instant Refresh Gift Set 300ml Shower Gel +
@@ -80,20 +81,21 @@ import App from '~/layouts/app.vue';
                     </span>
                     <span class="mx-2 w-[1px] h-6 bg-gray-300">
                     </span>
-                    <button class="flex text-sm">
-                        <span class="text-default font-bold">Superdrug</span>
+                    <button data-tid="provider" class="flex text-sm">
+                        <a class="text-default font-bold hover:underline">Superdrug</a>
                         <span class="text-gray-400 ml-1">Deals</span>
                     </button>
                 </span>
             </div>
-            <div data-tid="description" class="col-start-1 md:col-start-2 col-end-4 row-start-3 w-full md:w-auto py-1 line-clamp-5">
+            <div data-tid="description"
+                class="col-start-1 md:col-start-2 col-end-4 row-start-3 w-full md:w-auto py-1 line-clamp-5">
                 <span>
                     Description High performance shower gel to jump start your morning and give you an instant
                     wake-up
                     effect Enriched with 100mg of Taurine, an active ingredient that's like a shot of energy …
                 </span>
             </div>
-            <div data-tid="bottom" class="col-start-1 md:col-start-2 col-end-4 row-start-4 flex flex-wrap items-center">
+            <div data-tid="footer" class="col-start-1 md:col-start-2 col-end-4 row-start-4 flex flex-wrap items-center">
                 <span data-tid="source" class="flex mr-1 items-center">
                     <span class="aspect-square overflow-hidden rounded-full">
                         <img src="https://images.hotukdeals.com/users/raw/default/1426964_13/fi/30x30/qt/80/1426964_13.jpg"
@@ -106,7 +108,7 @@ import App from '~/layouts/app.vue';
 
                     </span>
                 </span>
-                <span data-tid="bokmarksAndComments" class="flex ml-auto ">
+                <span data-tid="meta" class="flex ml-auto ">
                     <button data-tid="bookmark" type="button" class="button aspect-square mr-2">
                         <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -124,8 +126,8 @@ import App from '~/layouts/app.vue';
                         <span class="ml-1">0</span>
                     </button>
                 </span>
-                <button data-tid="getDeal"
-                    class="flex w-full md:w-auto items-center justify-center h-9 text-white bg-default rounded-full px-3 mt-2 md:mt-0 md:ml-2">
+                <button data-tid="deal"
+                    class="flex w-full md:w-auto items-center justify-center h-9 text-white bg-default hover:bg-hover hover:shadow-deal transition-all rounded-full px-3 mt-2 md:mt-0 md:ml-2">
                     <span class="">Get
                         deal*</span>
                     <svg width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">

@@ -16,6 +16,9 @@ export default {
         default: "#ff7900",
         hover: "#ff9300",
       },
+      boxShadow: {
+        'deal': '0 0 0 1px #ff9300',
+      }
     },
   },
   plugins: [],
