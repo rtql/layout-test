@@ -6,7 +6,7 @@ import App from '~/layouts/app.vue';
         <div class="w-full p-4 md:grid row-auto col-auto rounded-lg bg-white text-sm group cursor-pointer">
             <div data-tid="header"
                 class="col-start-1 md:col-start-2 col-end-4 row-start-1 flex justify-between items-center pb-4 ">
-                <div data-tid="discount" class="button p-1 cursor-default">
+                <div data-tid="discount" class="button p-1 cursor-default hover:bg-white">
                     <button data-tid="minus" type="button" class="button-discount text-blue-700 hover:bg-blue-100"
                         title="Down vote">
                         <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
